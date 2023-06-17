@@ -6,7 +6,7 @@
 /**
  * main - entry point
  *
- * Description:  print the last digit of the number n status :
+ * Description:  print the value of n status :
  *		 greater than 5 ,is 0 and not less than 6.
  *
  * Return: 0 (success)
