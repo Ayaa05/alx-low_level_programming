@@ -1,25 +1,26 @@
 #include <stdio.h>
 
 /**
- *  main - prints all possible combinations of single-digit numbers
- * Return: Always 0 (Success)
+ * main - Entre point
+ *
+ *
+ * Return: (0) is successful
 */
+
 int main(void)
 {
-	int n;
+	int c = '0';
 
-	for (n = 48; n < 58; n++)
+	while (c <= '9')
 	{
-		putchar(n);
-		if (n != 57)
+		putchar(c);
+		if (c != '9')
 		{
-			putchar(n);
-			if (n != 57)
-			{
-				putchar(',');
-				putchar(' ');
-			}
+			putchar(',');
+			putchar(' ');
 		}
-		putchar('\n');
-		return (0);
+		c++;
+	}
+	putchar('\n');
+	return (0);
 }
