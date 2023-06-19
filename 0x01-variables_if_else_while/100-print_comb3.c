@@ -8,12 +8,12 @@
 
 int main(void)
 {
-	int n= '0';
-	int m= '1';
-	
-	while (n <= '8)
+	int n = '0';
+	int m = '1';
+
+	while (n <= '8')
 	{
-                m = n + 1;
+		m = n + 1;
 		while (m <= '9')
 		{
 			putchar(n);
@@ -23,7 +23,7 @@ int main(void)
 				putchar(',');
 				putchar(' ');
 			}
-                        m++;
+			m++;
 		}
 		n++;
 	}
