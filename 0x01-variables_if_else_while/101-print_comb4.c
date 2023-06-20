@@ -1,10 +1,10 @@
-#include <stdio.h>
+#include <stdiolib.h>
 
 /**
- *main - Enter point
+ *  main _ Entry point
  *
  *
- *Return: (0) is successful
+ * Return: (0) is successful
 */
 
 int main(void)
@@ -12,7 +12,7 @@ int main(void)
 	int a = '0';
 	int b;
 	int c;
-	
+
 	while (a <= '7')
 	{
 		b = a + 1;
@@ -38,3 +38,5 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+
+
