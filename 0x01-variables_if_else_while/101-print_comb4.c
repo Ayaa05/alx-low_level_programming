@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - Enter point 
+ *main - Enter point
  *
  *
- * Return: (0) is successful
+ *Return: (0) is successful
 */
 
 int main(void)
