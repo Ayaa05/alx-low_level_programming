@@ -2,8 +2,7 @@
 #include <stdio.h>
 
 /**
- * swap_int - swaps the values of two integers
- * 		using two input parametres
+ * swap_int - swaps the values of two integers using two input parametres
  *
  * @a: input parametrer 1
  * @b: input parametrer 2
