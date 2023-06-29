@@ -2,11 +2,11 @@
 
 /**
  * _strcat - concatenates two strings
- * @dzst: input value
+ * @dest: input value
  * @src: input value
- * Return:void
+ * Return: void
  */
-char *_srtcat(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
 	int i;
 	int j;
