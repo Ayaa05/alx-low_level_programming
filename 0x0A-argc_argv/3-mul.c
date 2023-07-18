@@ -25,6 +25,6 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	return (O);
+	return (0);
 	}
 }
