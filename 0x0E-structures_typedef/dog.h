@@ -4,8 +4,8 @@
 /**
  * struct dog - a dog struct
  * @name: dog's name
- * @age: age of the dog
- * @owner: owner of the dog
+ * @age: dog's age
+ * @owner: owner's name
  *
  * Description: just a lone dog struct in a big kitty world
  */
@@ -15,6 +15,5 @@ struct dog
 	float age;
 	char *owner;
 };
-
 
 #endif
