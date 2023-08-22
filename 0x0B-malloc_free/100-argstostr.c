@@ -1,69 +1,33 @@
-#include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
 
 /**
- * _strlen - returns the length of a given string
- * @s: the string
- * Return: the length of given string
+ * argstostr -  concatenates all the arguments of your program.
+ * @ac: the number of argument.
+ * @av: an array of string.
+ * Return: NULL if ac == 0 or av == NULL or fails, otherwase (av).
  */
-
-int _strlen(char *s)
+char *argstostr(int ac, char **av)
 {
-	int i;
+	int i, j, ch, len = 0;
+	char *av2;
 
-	i = 0;
-	while (s[i])
-	{
-		i++;
-	}
-	return (i);
-}
-
-/**
- * _create_array - creates an array of chars.
- * @size: the size of the memory to allocate.
- * Return: the array created.
- */
-
-char *_create_array(unsigned int size)
-{
-	int len;
-	char *string;
-	int i;
-	int j;
-	int index_string;
-	int index;
-
-	i = 0;
-	len = 0;
-	index_string = 0;
-	j = 0;
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	while (i < ac)
-	{
-		len += _strlen(av[i]);
-		i++;
-	}
-	string = malloc(sizeof(char) * len + (ac + 1));
-	if (!string)
-		return (NULL);
-	i = 0;
-	while (i < ac)
-	{
-		index = 0;
-		while (av[j][index])
-		{
-			string[index_string] = av[j][index];
-			index_string++;
-			index++;
-		}
-		j++;
-		string[index_string] = '\n';
-		index_string++;
-		i++;
-	}
-	return (string);
-}
 
+	for (i = 0 ; i < ac ; i++)
+		len += strlen(av[i]) + 1;
+
+	av2 = malloc(sizeof(char) * (len + 1));
+	if (av2 == NULL)
+		return (NULL);
+	ch = 0;
+	for (i = 0 ; i < ac ; i++)
+	{
+		for (j = 0 ; av[i][j] ; j++)
+			av2[ch++] = av[i][j];
+		av2[ch++] = '\n';
+	}
+	av2[ch] = '\0';
+	return (av2);
+}
